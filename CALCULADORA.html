@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<SCRIPT LANGUAJE="Javascript">
+ function calcula(form) {
+ if (confirm("¿Está seguro?"))
+ form.resultado.value = eval(form.expr.value)
+ else
+ alert("Vuelva a intentarlo...")
+ }
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM>
+ Cuntos numeros son?
+ <INPUT TYPE="text" NAME="expr" SIZE=15>
+ <INPUT TYPE="button" NAME="Boton" VALUE="Calcular" ONCLICK="calcula(this.form)">
+ <BR>
+ Resultado:
+ <INPUT TYPE="text" NAME="resultado" SIZE=15>
+ <BR>
+</FORM>
+</BODY>
+</HTML>
